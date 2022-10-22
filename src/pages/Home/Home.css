@@ -1,0 +1,24 @@
+.home{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.home--sections{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 3%;
+}
+
+.home--title{
+    font-size: 1.7rem;
+}
+
+.home__characters{
+    background-color: #FFBBBA;
+}

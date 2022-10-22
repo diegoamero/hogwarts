@@ -1,8 +1,13 @@
 import React from 'react'
+import './Section.css'
 
-function Section({title}) {
+function Section({title, image}) {
   return (
-    <h3>{title}</h3>
+      <div className='section'>
+          <h3 className='section--title'>{title}</h3>
+          <img src={image} className='section--logo'/>
+      </div>
+    
   )
 }
 
