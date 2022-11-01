@@ -1,12 +1,12 @@
 import React from 'react'
 import './Section.css'
-
+import {Link} from 'react-router-dom'
 function Section({title, image}) {
   return (
-      <div className='section'>
+      <Link to={`/${title}`} className='section'>
           <h3 className='section--title'>{title}</h3>
           <img src={image} className='section--logo'/>
-      </div>
+      </Link>
     
   )
 }
