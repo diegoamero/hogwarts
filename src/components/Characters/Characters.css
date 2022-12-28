@@ -1,0 +1,23 @@
+.housesList{
+    display: block;
+    list-style: none;
+}
+
+.housesLink{
+    display: none;
+}
+
+.housesList--title{
+    font-size: 17px;
+}
+
+.housesList--name{
+    font-size: 10px;
+}
+.housesList:hover{
+    cursor: pointer;
+}
+
+.housesList:hover .housesLink{
+    display: block;
+}
