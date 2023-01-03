@@ -5,8 +5,8 @@ import Home from './pages/Home/Home';
 import CharactersPage from './pages/Characters/CharactersPage'
 import CharactersHouse from './pages/CharactersHouse/CharactersHouse';
 import Houses from './pages/Houses/Houses'
-import Professors from './pages/Professors/Professors'
 import StudentsPage from './pages/Students/StudentsPage'
+import ProfessorsPage from './pages/Professors/ProfessorsPage';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='characters' element={<CharactersPage/>}/>
-        <Route path='characters/:house' element={<CharactersHouse/>}/>
-        <Route path='professors' element={<Professors/>}/>
+        <Route path='professors' element={<ProfessorsPage/>}/>
         <Route path='houses' element={<Houses/>}/>
+        <Route path='houses/:house' element={<CharactersHouse/>}/>
         <Route path='students' element={<StudentsPage/>}/>
       </Routes>
     </div>

@@ -2,22 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { getInfo } from '../../services/getInfo';
 import Table from '../Table/Table';
 
-const API = 'https://hp-api.onrender.com/api/characters/students';
+const API = 'https://hp-api.onrender.com/api/characters/staff';
 
 
-function Students() {
-    const [students, setStudents] = useState([]);
+function Professors() {
+    const [Professors, setProfessors] = useState([]);
 
     useEffect(() => {
         getInfo(API).then(arr => {
-            setStudents(arr);
+            setProfessors(arr);
         })
     }, [])
 
     //We're using tailwind to the table design
     return (
-        students ?
-            <Table data={students} />
+        Professors ?
+            <Table data={Professors} />
             :
             <p>Loading...</p>
 
@@ -25,4 +25,4 @@ function Students() {
     )
 }
 
-export default Students;
+export default Professors;
