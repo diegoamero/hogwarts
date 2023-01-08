@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family:Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'harry-potter';
+    src: url(https://fonts.cdnfonts.com/s/25438/HARRP___.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    font-family: harry-potter, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     font-size: 62.5%;
 }

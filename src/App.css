@@ -4,4 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(0deg, rgba(50,156,151,0.6) 0%, rgba(4, 36, 26, 0.6) 100%), url('https://i.postimg.cc/QCmf7cs7/wallpaperflare-com-wallpaper-1.jpg');
+  background-position: 50%;
 }
